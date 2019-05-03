@@ -1,0 +1,394 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url("../images/bg.png") no-repeat top center;
+    background-size: cover;
+    width: 100%;
+    box-sizing: border-box;
+    transition: ease 0.3s;
+    font-family: 'Russo One', sans-serif;
+    font-weight: bold;
+}
+.logo {
+    margin: 15px auto;
+    max-width: 600px;
+    text-align: center;
+    padding: 11px 0px 12px 0px;
+}
+
+.logo a img{
+    max-width: 600px;
+}
+.main-menu {
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+.btn {
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: 100px;
+    color: #fff;
+    background: #fbc300;
+    border: none;
+    border-radius: 9px;
+    margin: 18px 0px;
+    font-size: 50px;
+    outline: none !important;
+    font-family: 'Russo One', sans-serif;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #fdd650;
+}
+.btn-grey{
+    background-color: #bbbbbb;
+}
+.btn-grey:hover{
+    background-color: #9b9797;
+}
+.trademark {
+    max-width: 600px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #fff;
+    margin: auto;
+    padding: 15px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.choose-date {
+    margin: 0px auto 18px;
+    max-width: 960px;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #000;
+}
+.write-password {
+    padding-top: 30px;
+    margin: 0 auto;
+    max-width: 960px;
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.blank{
+    max-width: 1024px;
+    background-color: #bbbbbb;
+    width: 100%;
+    margin: 0 auto;
+    padding: 18px 20px 30px 20px;
+    border-radius: 10px;
+}
+.deposited{
+    display: inline-block;
+    width: 49%;
+    color: #fff;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+.amount{
+    display: inline-block;
+    text-align: right;
+    width: 50%;
+    color: #fff;
+    font-size: 70px;
+}
+ul.oglavl {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+ul.oglavl li {
+    border-bottom: 2px dashed #000;
+    position: relative;
+    padding: 0;
+    margin-bottom:5px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+ul.oglavl li span {
+    background-color: #bbbbbb;
+    margin: 0;
+}
+
+ul.oglavl li span.text, ul.oglavl li span.characteristic {
+    bottom: -5px;
+}
+
+ul.oglavl span.text {
+    position :relative;
+    margin-right:7em;
+    padding-right:2px;
+}
+
+ul.oglavl span.characteristic {
+    position: absolute;
+    right: 0;
+    padding-left:2px;
+}
+.attention{
+    padding-top: 20px;
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ff0000;
+    font-size: 36px;
+}
+.btn-cancel {
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+}
+.button-cancel{
+    text-align: center;
+    background-color: #fbc300;
+    width: 50%;
+    height: 100px;
+    border: none;
+    border-radius: 10px;
+    font-size: 60px;
+    color: #fff;
+    text-transform: uppercase;
+    outline: none!important;
+    font-family: 'Russo One', sans-serif;
+}
+.button-cancel:hover{
+    background-color: #fdd650;
+    cursor: pointer;
+}
+.password-number{
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 15px;
+}
+.dates{
+    margin: 0 auto;
+    max-width: 1024px;
+    width: 100%;
+}
+.row-first{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.pick{
+    text-align: center;
+    text-transform: uppercase;
+    background-color: white;
+    height: 90px;
+    width: 11%;
+    border: #fbc300 3px solid;
+    border-radius: 10px;
+    margin: 4px;
+    color: black;
+    user-select: none;
+}
+.pick:hover{
+    cursor: pointer;
+}
+.pick-action{
+    background-color: #fbc300;
+    color: white;
+    border: #fbc300 3px solid;
+}
+.pick-action-active{
+    background-color: #0cac06;
+    border: 3px solid #0cac06;
+}
+.number {
+    font-size: 60px;
+    user-select: none;
+}
+.date{
+    font-size: 13px;
+}
+.pick-action:hover{
+    cursor: pointer;
+}
+.second-row{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.row-third{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.row-fourth{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.stamp-btn{
+    background-color: #fbc300;
+    border: none;
+    border-radius: 10px;
+    max-width: 254px;
+    width: 254px;
+    height: 90px;
+    margin-top: 8px;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    outline: none!important;
+    font-family: 'Russo One', sans-serif;
+}
+.stamp-btn[disabled]{
+    background-color: #fc8e8e;
+}
+.stamp-btn[disabled]:hover{
+    background-color: #fc8e8e;
+    cursor: auto;
+}
+.stamp-btn:hover {
+    background-color: #f5d871;
+    outline: none;
+    cursor: pointer;
+}
+.get-password{
+    max-width: 768px;
+    width: 768px;
+    margin: 0 auto;
+}
+#password {
+    width: 100%;
+    border: #fbc300 3px solid;
+    border-radius: 10px;
+    height: 40px;
+    padding-left: 10px;
+    outline: none!important;
+    margin: 10px 0px;
+}
+.left-middle-block{
+    width: 439px;
+    position: relative;
+    display: inline-block;
+}
+#number{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+#number li{
+    margin: 5px;
+    user-select: none;
+}
+#number li span {
+    display: block;
+    height: 90px;
+    width: 100px;
+    background-color: #fbc300;
+    cursor: pointer;
+    font-size: 70px;
+    text-align: center;
+    border-radius: 8px;
+}
+#number li span:hover{
+    background-color: #fdd650;
+}
+#number li span:active{
+    background-color: #fdd650;
+}
+#number li:nth-child(10){
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 40px;
+}
+#number li:nth-child(10) span{
+    line-height: 283px;
+    height: 290px;
+    text-align: center;
+}
+input, textarea, select, button {
+    text-rendering: auto;
+    color: #fbc300;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em;
+    font: 400 40px Arial;
+}
+.middle{
+    display: flex;
+    justify-content: space-between;
+}
+.clean-btn {
+    width: 260px;
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#clean{
+    background-color: #fbc300;
+    display: block;
+    border-radius: 10px;
+    font-size: 47px;
+    text-transform: uppercase;
+    color: white;
+    width: 275px;
+    text-align: center;
+    padding: 25px 0px;
+    user-select: none;
+}
+#clean:hover{
+    background-color: #fdd650;
+}
+#clean:hover{
+    cursor: pointer;
+}
+.enter{
+    background-color: #fbc300;
+    color: white;
+    border-radius: 10px;
+    font-size: 50px;
+    border:none;
+    width: 275px;
+    text-align: center;
+    padding: 25px 0px;
+    margin-bottom: 5px;
+    outline: none!important;
+    text-transform: uppercase;
+    user-select: none;
+    font-family: 'Russo One', sans-serif;
+}
+.enter:hover{
+    background-color: #fdd650;
+    cursor: pointer;
+}
+.enter:active {
+    background-color: #fdd650;
+}
+.footer{
+    margin-top: 15px;
+}

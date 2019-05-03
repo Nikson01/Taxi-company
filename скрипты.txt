@@ -1,0 +1,40 @@
+<script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function() {
+        var button = $('.stamp-btn');
+        $(button).attr('disabled', 'disabled');
+
+        $('.pick-action').click(function() {
+            if ($(button).attr('disabled')) $(button).removeAttr('disabled');
+            else $(button).attr('disabled', 'disabled');
+        });
+    });
+</script>
+<script>
+
+    $(document).ready(function () {
+        $(".pick-action").on("click", function () {
+            $(this).toggleClass("pick-action-active")
+        });
+    });
+</script>
+<script type="text/javascript">
+    $(function (){
+        $('.pick-action').click(function (){
+            $('.stamp-btn').attr('disabled',false);
+        });
+        <!--// $('#p1').click(function (){-->
+        <!--//     $('.stamp-btn').attr('disabled');-->
+        <!--// });-->
+    <!--});-->
+</script>
+<!--<script>-->
+    <!--function Check()-->
+    <!--{-->
+        <!--if (obj == 'true') { document.all.btn.disabled = true }-->
+        <!--else { document.all.btn.disabled = false };-->
+    <!--}-->
+<!--</script>-->

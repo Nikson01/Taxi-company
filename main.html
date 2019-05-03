@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>main</title>
+    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+<header class="header" id="header">
+    <div class="logo">
+        <a href="#">
+            <img src="images/logo.png">
+        </a>
+    </div>
+</header>
+<div class="write-password">
+    введите ваш пароль в личный кабинет
+</div>
+<div class="get-password">
+    <input id="password" type="password">
+    <div class="middle">
+    <div class="left-middle-block">
+<ul id="number">
+    <li><span>1</span></li>
+    <li><span>2</span></li>
+    <li><span>3</span></li>
+    <li><span>4</span></li>
+    <li><span>5</span></li>
+    <li><span>6</span></li>
+    <li><span>7</span></li>
+    <li><span>8</span></li>
+    <li><span>9</span></li>
+    <li><span>0</span></li>
+</ul>
+</div>
+        <div class="clean-btn">
+            <span id="clean">стереть</span>
+            <button type="button" class="enter">
+                Войти
+            </button>
+        </div>
+    </div>
+</div>
+<footer class="footer" id="footer">
+    <div class="trademark">
+        ООО «Биотроник»
+    </div>
+</footer>
+<script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+<script>
+    $('ul#number li span').on('click', function callPassword() {
+        var i = '',
+            num = $(this).html(),
+            input = $('#password');
+
+        i = input.val();
+        input.val(i + num);
+    });
+
+    $('span#clean').on('click', function clean(){
+        str = $('#password').val();
+        var t = str.substring(0, str.length - 1);
+        $('#password').val(t);
+    })
+</script>
+</body>
+</html>
